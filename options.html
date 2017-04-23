@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>Link saver settings</title>
+		<script src="options.js" charset="utf-8"></script>
+		<style>
+			body {
+				padding: 5px;
+			}
+
+			label {
+				display: inline-block;
+				width: 85px;
+				text-align: right;
+			}
+
+			button {
+				float: right;
+			}
+
+			#status {
+				padding-left: 90px;
+				float: left;
+			}
+
+			#savediv {
+				padding-top: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+		<div>
+			<label for="push_url">Push url:</label>
+			<input type="url" name="push_url" id="push_url" value="" />
+		</div>
+		<div>
+			<label for="secret_token">Secret token:</label>
+			<input type="text" name="secret_token" id="secret_token" value="" />
+		</div>
+		</section>
+
+		<div id="savediv">
+			<div id="status"></div>
+			<button id="save">Save</button>
+		</div>
+
+	</body>
+</html>
