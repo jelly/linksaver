@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Site pusher",
+  "version": "0.1",
+  "version": "0.1",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "commands": {
+    "saveurl": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y"
+      },
+      "description": "Send url to server"
+    }
+  },
+  "permissions": [
+    "https://*/"
+  ]
+}
