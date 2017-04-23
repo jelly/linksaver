@@ -1,5 +1,5 @@
 chrome.runtime.onMessage.addListener(
-  function(request, sender, sendResponse) {
+  function(request) {
     if ( request.message === 'clicked_browser_action' ) {
       chrome.storage.sync.get({
         push_url: '',
